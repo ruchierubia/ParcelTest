@@ -117,42 +117,205 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"scripts/bro.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
+})({"scripts/index.js":[function(require,module,exports) {
+var myApp = angular.module("productsModule", []);
+myApp.controller('productsController', function ($scope) {
+  $scope.message = "Hello from controller";
+  $scope.products = [{
+    "id": 22565423428,
+    "title": "SV 8GB USB Flash Memory E100",
+    "imageUrl": "/images/22565423428.png",
+    "url": "/products/22565423428",
+    "prices": [{
+      "amount": 159.92,
+      "currency": "SEK"
+    }, {
+      "amount": 19.99,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423394,
+    "title": "Litware Wireless Mouse M35",
+    "imageUrl": "/images/22565423394.png",
+    "url": "/products/22565423394",
+    "prices": [{
+      "amount": 239.6,
+      "currency": "SEK"
+    }, {
+      "amount": 29.95,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423421,
+    "title": "SV Keyboard E90",
+    "imageUrl": "/images/22565423421.png",
+    "url": "/products/22565423421",
+    "prices": [{
+      "amount": 333.84,
+      "currency": "SEK"
+    }, {
+      "amount": 41.73,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423368,
+    "title": "Proseware Ink Jet Wireless Printer M400",
+    "imageUrl": "/images/22565423368.png",
+    "url": "/products/22565423368",
+    "prices": [{
+      "amount": 1032,
+      "currency": "SEK"
+    }, {
+      "amount": 129,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423204,
+    "title": "Fabrikam Tablet M50",
+    "imageUrl": "/images/22565423204.png",
+    "url": "/products/22565423204",
+    "prices": [{
+      "amount": 792,
+      "currency": "SEK"
+    }, {
+      "amount": 99,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423328,
+    "title": "WWI LCD17 E200",
+    "imageUrl": "/images/22565423328.png",
+    "url": "/products/22565423328",
+    "prices": [{
+      "amount": 792,
+      "currency": "SEK"
+    }, {
+      "amount": 99,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423456,
+    "title": "A. Datum Compact Digital Camera M200",
+    "imageUrl": "/images/22565423456.png",
+    "url": "/products/22565423456",
+    "prices": [{
+      "amount": 1032,
+      "currency": "SEK"
+    }, {
+      "amount": 129,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423255,
+    "title": "WWI Desktop PC1.80 E1800",
+    "imageUrl": "/images/22565423255.png",
+    "url": "/products/22565423255",
+    "prices": [{
+      "amount": 1839.2,
+      "currency": "SEK"
+    }, {
+      "amount": 229.9,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423121,
+    "title": "Southridge Video Laptop8.9 E0890",
+    "imageUrl": "/images/22565423121.png",
+    "url": "/products/22565423121",
+    "prices": [{
+      "amount": 2608,
+      "currency": "SEK"
+    }, {
+      "amount": 326,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423906,
+    "title": "Litware 4-Line Cordless Phone M203",
+    "imageUrl": "/images/22565423906.png",
+    "url": "/products/22565423906",
+    "prices": [{
+      "amount": 263.92,
+      "currency": "SEK"
+    }, {
+      "amount": 32.99,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423803,
+    "title": "Fabrikam Bookshelf Speaker",
+    "imageUrl": "/images/22565423803.png",
+    "url": "/products/22565423803",
+    "prices": [{
+      "amount": 639.92,
+      "currency": "SEK"
+    }, {
+      "amount": 79.99,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423658,
+    "title": "SV 8xDVD E100",
+    "imageUrl": "/images/22565423658.png",
+    "url": "/products/22565423658",
+    "prices": [{
+      "amount": 552,
+      "currency": "SEK"
+    }, {
+      "amount": 69,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423853,
+    "title": "Proseware Play Headphones",
+    "imageUrl": "/images/22565423853.png",
+    "url": "/products/22565423853",
+    "prices": [{
+      "amount": 799.92,
+      "currency": "SEK"
+    }, {
+      "amount": 99.99,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423591,
+    "title": "Fabrikam Social Videographer E200",
+    "imageUrl": "/images/22565423591.png",
+    "url": "/products/22565423591",
+    "prices": [{
+      "amount": 1320,
+      "currency": "SEK"
+    }, {
+      "amount": 165,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423532,
+    "title": "A. Datum SLR Camera X358",
+    "imageUrl": "/images/22565423532.png",
+    "url": "/products/22565423532",
+    "prices": [{
+      "amount": 4704,
+      "currency": "SEK"
+    }, {
+      "amount": 588,
+      "currency": "EUR"
+    }]
+  }, {
+    "id": 22565423633,
+    "title": "Southridge Video 32\" LCD HDTV M130",
+    "imageUrl": "/images/22565423633.png",
+    "url": "/products/22565423633",
+    "prices": [{
+      "amount": 3999.92,
+      "currency": "SEK"
+    }, {
+      "amount": 499.99,
+      "currency": "EUR"
+    }]
+  }];
 });
-exports.bro = void 0;
-
-var bro = function bro(greeting) {
-  return "".concat(greeting, ", bro");
-};
-
-exports.bro = bro;
-},{}],"scripts/index.js":[function(require,module,exports) {
-"use strict";
-
-var _bro = require("./bro");
-
-document.querySelector('h1').textContent = (0, _bro.bro)("Hey");
-var myApp = angular.module("productsModule", ["ngRoute"]);
-myApp.run(function ($rootScope) {
-  $rootScope.apidomain = 'http://localhost:8181';
-});
-myApp.config(function ($routeProvider, $locationProvider) {
-  $routeProvider.when('/products', {
-    template: '<h2>test template</h2>',
-    controller: "productsController"
-  }).when('/cart', {
-    templateUrl: './cart.html',
-    controller: 'productsController'
-  });
-});
-myApp.controller("productsController", function ($scope) {
-  $scope.message = "Hello";
-});
-},{"./bro":"scripts/bro.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -180,7 +343,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59044" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63578" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
